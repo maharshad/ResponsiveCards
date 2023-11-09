@@ -1,0 +1,154 @@
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #000;  
+  color: #fff;
+}
+
+.App{
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Social{
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  gap: 50px;
+  
+}
+.left-container{
+  width: 50%;
+  height: 100%;
+  
+}
+.right-container{
+  width: 45%;
+  height: 100%;
+}
+
+.left-container .card {
+  display: flex;
+  justify-content: space-between ;
+  gap: 30px;
+  margin-bottom: 30px ;
+  padding: 10px 0px;
+  border: 1px solid #757474;
+  background-color: #000; 
+  color: #fff; 
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  
+}
+
+
+
+.url-icon {
+   position: absolute; 
+  top: 5px; 
+  right: 5px; 
+  width: 30px; 
+
+}
+
+.image-container {
+  width: 15%; 
+  justify-content: end;
+  text-align: end;
+  margin-top: 10px;
+  
+}
+
+.image-left {
+  width: 60px;
+}
+
+.text-container {
+ width: 85%;
+}
+
+.heading {
+  text-align: left;
+}
+
+.card-text {
+  text-align: left;
+ }
+
+ .right-container .img-box{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ }
+
+.right-container .img-box img{
+  width: 80%;
+}
+
+.right-container h2{
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.right-container h2 span{
+background: -webkit-linear-gradient(left, #F70FFF , #2C63FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.right-container p{
+  line-height: 20px;
+
+}
+
+@media (max-width:1025px) {
+
+  .left-container .card {
+   
+    margin-bottom: 15px ;
+  }  
+.heading {
+  font-size: 18px;
+}
+
+.card-text {
+  font-size: 12px;
+ }
+
+ .Social{
+  padding:  30px;
+ 
+  
+}
+.right-container p{
+  font-size: 12px;
+}
+.right-container h2{
+  font-size: 32px;
+}
+
+}
+@media (max-width:620px) {
+
+  .Social{
+    flex-direction: column;
+  }
+  .left-container, .right-container{
+    width: 100%;
+  }
+}
